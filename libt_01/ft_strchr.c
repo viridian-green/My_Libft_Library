@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:35:34 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/22 16:27:28 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/23 18:40:42 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -25,5 +25,7 @@ char	*ft_strchr(const char *s, int c)
 		}
 		i++;
 	}
+	if (s[i] == c)
+        return ((char *)&s[i]);
 	return (NULL);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:08:47 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/22 16:29:14 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/23 18:06:39 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

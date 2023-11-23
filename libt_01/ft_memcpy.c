@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 15:27:46 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/22 16:29:00 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/23 17:28:21 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*p_src;
 	size_t				i;
 
-	p_dest = dest;
-	p_src = src;
+	p_dest = (unsigned char *)dest;
+	p_src = (const unsigned char *)src;
 	i = 0;
 	if (dest == src)
 	{

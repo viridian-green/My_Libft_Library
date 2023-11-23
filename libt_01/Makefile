@@ -24,7 +24,6 @@ OBJS			= $(SRCS:.c=.o)
 CC				= gcc
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror -I.
-TEST_FLAGS := -I./includes -I./Users/adelemartin/libft_01/libt_01/francinette
 
 all:			$(NAME)
 
