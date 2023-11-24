@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+         #
+#    By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/22 14:07:38 by ademarti          #+#    #+#              #
-#    Updated: 2023/11/23 19:20:33 by adelemartin      ###   ########.fr        #
+#    Updated: 2023/11/24 15:45:27 by ademarti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,8 +16,8 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c \
 ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c \
 ft_memchr.c ft_memcmp.c ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
-ft_strjoin.c ft_strtrim.c ft_putstr_fd.c ft_putendl_fd.c \
-# ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd \
+ft_strjoin.c ft_strtrim.c ft_putstr_fd.c  \
+# ft_split.c ft_putendl_fd.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd \
 # #  ft_putnbr_fd.c
 OBJS			= $(SRCS:.c=.o)
 
