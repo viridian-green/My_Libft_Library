@@ -6,7 +6,7 @@
 /*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 17:08:21 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/22 16:34:23 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/24 18:27:45 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	substr[i] = '\0';
 	return (substr);
+}
+
+int main()
+{
+	char *s = "hello you!";
+	char *result = ft_substr(s, 2, 3);
+	// free(substr);
+	printf("%s", result);
+	return 0;
 }

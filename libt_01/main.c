@@ -6,7 +6,7 @@
 /*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 14:57:27 by adelemartin       #+#    #+#             */
-/*   Updated: 2023/11/24 15:44:08 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/24 17:43:12 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,3 +153,10 @@
 
 //ft_putchar_fd
 // ft_putchar_fd('a', 1);
+
+//strncmp
+// 	int copy = ft_strncmp"test\200", "test\0", 6);
+// 	int original = strncmp("abcdefgh", "abcdwxyz", 4);
+// 	printf("%d \n", copy);
+// 	printf("%d", original);
+// }

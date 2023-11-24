@@ -6,7 +6,7 @@
 /*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:20:48 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/22 16:29:27 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/24 18:15:44 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,13 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	j = 0;
-	while (big[i] != '\0' && (i + j) < len)
+	if (little[i] == '\0' )
 	{
-		j = 0;
-		while (big[i + j] == little[j])
+		return ((char *)&big[i]);
+	}
+	while (big[i] != '\0' && i < len)
+	{
+		while (big[i + j] == little[j] && big[i + j] && i + j < len)
 		{
 			if (little[j + 1] == '\0')
 			{
@@ -31,10 +34,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			j++;
 		}
 		i++;
-	}
-	if (!little)
-	{
-		return ((char *)big);
+		j = 0;
 	}
 	return (NULL);
 }
