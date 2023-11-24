@@ -1,23 +1,24 @@
-#include "libft.h"
+// #include "libft.h"
 
-int	size_of_int(int n)
-{
+// int	size_of_int(int n)
+// {
+// 	if (n > 10)
+// 		sizeofint(n / 10);
+// 	if (n < 0)
+// 		n = -n;
+// 	sizeofint(n % 10);
+// }
 
-}
+// char	*ft_itoa(int n)
+// {
+// 	char	*result;
 
-char	*ft_itoa(int n)
-{
-	char	*result;
-
-	result = (char *)malloc(sizeof(char) * )
-	if (n > 10)
-	{
-
-	}
-
-
+// 	result = (char *)malloc(sizeof(char) * )
 
 
-	return ()
 
-}
+
+
+// 	return ()
+
+// }
