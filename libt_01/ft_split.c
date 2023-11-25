@@ -6,7 +6,7 @@
 /*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 15:13:24 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/25 15:58:43 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/25 17:50:02 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	count_words(char const *s, char c)
 	size_t	i;
 	size_t deli_at_start;
 
-	word_count = 1;
+	word_count = 0;
 	i = 0;
 	deli_at_start = 1;
 	while (s[i] != '\0')
@@ -32,7 +32,6 @@ size_t	count_words(char const *s, char c)
 		{
 			if (s[i] == c)
 			{
-			word_count = 0;
 			deli_at_start = 0;
 			i++;
 			}
@@ -69,8 +68,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size = ft_strlen(s);
 	if (start >= size)
 		return (NULL);
-	if (start < 0)
-		return (NULL);
 	i = 0;
 	substr = (char *)malloc(sizeof(char) * (len + 1));
 	if (!substr)
@@ -84,6 +81,35 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (substr);
 }
 
+char	**make_substrings(char const *s, char c, char **result)
+{
+	size_t i = 0;
+	size_t start = 0;
+	size_t end = 0;
+	size_t j = 0;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] != c)
+		{
+			start = i;
+			while (s[i] != '\0' && s[i] != c)
+			{
+				i++;
+			}
+			end = i;
+			result[j] = ft_substr(s, start, end - start);
+			j++;
+		}
+		else
+		{
+			i++;
+		}
+	}
+	result[j] = NULL; // Add a null terminator to the result array
+	return (result);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
@@ -95,59 +121,23 @@ char	**ft_split(char const *s, char c)
 	result = (char **)malloc(sizeof(char *) * (occurences + 1));
 	if (!result)
 		return (NULL);
-//You have to free the malloc within the function
+	make_substrings(s, c, result);
+	//You have to free the malloc within the function
 	// free(result);
 	return (result);
 }
 
-char	**make_substrings(char const *s, char c)
-{
-	size_t	i;
-	size_t deli_at_start;
-	size_t start;
-	size_t end;
-	size_t j;
-
-	start = 0;
-	end = 0;
-	i = 0;
-	j = 0;
-	deli_at_start = 1;
-	while (s[i] != '\0')
-	{
-		if (s[i] != c)
-		{
-			start = i;
-			while (s[i] != '\0' && s[i] != c)
-			{
-				i++;
-				ft_split(s, c)[j] = ft_substr(s, start, i - start);
-				j++;
-			}
-		}
-		else
-		{
-			i++;
-		}
-
-		if (s[i] == c)
-		{
-			end = s[i];
-		}
-		i++;
-	}
-	return (ft_split(s, c));
-}
-
 int main()
 {
-	char *s = "*yo*how*are*you*";
+	char *s = "*yoyo*how*are*you";
 	// Try also "yo how**are**you"
 	char c = '*';
-	// char *result = is_word(s, c);
 	char **result2 = ft_split(s, c);
-	 for (int i = 0; result2[i] != NULL; ++i) {
-            printf("%s\n", result2[i]);
-	return 0;
+	size_t ok = count_words(s, c);
+	printf("%zu\n", ok);
+for (int i = 0; result2[i] != NULL; ++i)
+{
+    printf("%s\n", result2[i]);
 }
+	return 0;
 }

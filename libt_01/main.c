@@ -6,7 +6,7 @@
 /*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 14:57:27 by adelemartin       #+#    #+#             */
-/*   Updated: 2023/11/24 17:43:12 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/25 16:49:37 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,11 +146,9 @@
 // 	printf("%s", result);
 // 	return 0;
 
-// //f_putstr_fd.c
 
 // 	ft_putstr_fd("hey", 1);
 // }
-
 //ft_putchar_fd
 // ft_putchar_fd('a', 1);
 
