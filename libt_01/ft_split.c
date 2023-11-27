@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 15:13:24 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/25 17:50:02 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/27 15:50:29 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <bsd/string.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -21,28 +20,47 @@ size_t	count_words(char const *s, char c)
 {
 	size_t	word_count;
 	size_t	i;
-	size_t deli_at_start;
+	size_t	x;
 
-	word_count = 0;
 	i = 0;
-	deli_at_start = 1;
-	while (s[i] != '\0')
+	x = 0;
+	word_count = 0;
+	while (str[i] != '\0')
 	{
-		if (deli_at_start == 1)
-		{
-			if (s[i] == c)
+			if ((s[i + 1] == c || s[i + 1] == '\0') && s[i] != c)
 			{
-			deli_at_start = 0;
-			i++;
-			}
-		}
-		if (s[i] == c)
-		{
 			word_count++;
-		}
+			}
 		i++;
 	}
 	return (word_count);
+
+	while (str[i] != '\0')
+    {
+        if (str[i] != c && x == 0)
+        {
+            x = 1;
+            word_count++;
+        }
+        else if (str[i] == c)
+            x = 0;
+        i++;
+    }
+	return (word_count);
+}
+
+static void	ft_free(char **result, int word_count)
+{
+	size_t i;
+
+	i = 0;
+	while (i < word_count)
+	{
+		free(result[i]);
+		i++;
+	}
+	free(result);
+	return (NULL);
 }
 
 size_t	ft_strlen(const char *s)
@@ -67,7 +85,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	size = ft_strlen(s);
 	if (start >= size)
-		return (NULL);
+		return (ft_strdup(""));
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
 	i = 0;
 	substr = (char *)malloc(sizeof(char) * (len + 1));
 	if (!substr)
@@ -106,7 +126,7 @@ char	**make_substrings(char const *s, char c, char **result)
 			i++;
 		}
 	}
-	result[j] = NULL; // Add a null terminator to the result array
+	result[j] = NULL;
 	return (result);
 }
 
@@ -122,14 +142,12 @@ char	**ft_split(char const *s, char c)
 	if (!result)
 		return (NULL);
 	make_substrings(s, c, result);
-	//You have to free the malloc within the function
-	// free(result);
 	return (result);
 }
 
 int main()
 {
-	char *s = "*yoyo*how*are*you";
+	char *s = "*yoyo*how*are*you*";
 	// Try also "yo how**are**you"
 	char c = '*';
 	char **result2 = ft_split(s, c);

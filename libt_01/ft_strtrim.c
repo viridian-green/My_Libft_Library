@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 16:55:33 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/25 15:49:15 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/27 15:30:36 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <bsd/string.h>
+//#include <bsd/string.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

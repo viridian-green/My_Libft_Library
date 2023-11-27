@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 13:45:04 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/24 17:32:32 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/27 15:30:20 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <bsd/string.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
