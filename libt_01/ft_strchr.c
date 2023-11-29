@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:35:34 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/24 16:52:56 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/29 12:12:46 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,31 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	unsigned int	i;
+	char cc;
 
 	i = 0;
+	cc = (char) c;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if (s[i] == cc)
 		{
 			return ((char *)&s[i]);
 		}
 		i++;
 	}
-	if (s[i] == c)
+	if (s[i] == cc)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
+/*
+int main()
+{
+char *c = "234";
+ char dest[] = "hey";
+ 	char *result = strchr(c, 'H');
+     printf("%s", result);
+	  	return 0;
+}
+*/
