@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 14:57:27 by adelemartin       #+#    #+#             */
-/*   Updated: 2023/11/25 16:49:37 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/11/29 10:40:16 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -158,3 +158,20 @@
 // 	printf("%d \n", copy);
 // 	printf("%d", original);
 // }
+
+/*
+//ft_split
+{
+	char *s = "yoyohow*are*you";
+	// Try also "yo how**are**you"
+	char c = '*';
+	char **result2 = ft_split(s, c);
+	size_t ok = count_words(s, c);
+	printf("%zu\n", ok);
+for (int i = 0; result2[i] != NULL; ++i)
+{
+    printf("%s\n", result2[i]);
+}
+	return 0;
+}
+*/
