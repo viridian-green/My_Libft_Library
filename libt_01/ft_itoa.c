@@ -1,4 +1,4 @@
-// #include "libft.h"
+#include "libft.h"
 
 int	size_of_int(int n)
 {
