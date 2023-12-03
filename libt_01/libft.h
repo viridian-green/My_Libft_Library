@@ -6,7 +6,7 @@
 /*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 14:40:37 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/27 15:32:24 by adelemartin      ###   ########.fr       */
+/*   Updated: 2023/11/29 14:41:03 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif

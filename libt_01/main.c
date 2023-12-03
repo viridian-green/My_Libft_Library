@@ -6,7 +6,7 @@
 /*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 14:57:27 by adelemartin       #+#    #+#             */
-/*   Updated: 2023/11/29 10:40:16 by adelemartin      ###   ########.fr       */
+/*   Updated: 2023/12/03 14:32:33 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -174,4 +174,9 @@ for (int i = 0; result2[i] != NULL; ++i)
 }
 	return 0;
 }
+*/
+
+/*ft_itoa
+char *result = ft_itoa(-24);
+printf("%s", result);
 */

@@ -6,7 +6,7 @@
 /*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:35:34 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/29 12:12:46 by adelemartin      ###   ########.fr       */
+/*   Updated: 2023/11/29 12:32:12 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned int	i;
-	char cc;
+	char 			cc;
 
 	i = 0;
 	cc = (char) c;
@@ -31,14 +31,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-
-/*
-int main()
-{
-char *c = "234";
- char dest[] = "hey";
- 	char *result = strchr(c, 'H');
-     printf("%s", result);
-	  	return 0;
-}
-*/
