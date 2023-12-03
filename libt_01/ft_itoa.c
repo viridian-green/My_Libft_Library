@@ -1,5 +1,4 @@
 
-#include <stdio.h>
 #include "libft.h"
 
 int	size_of_int(long n)
@@ -8,8 +7,10 @@ int	size_of_int(long n)
 
 	count = 0;
 	if (n < 0)
+	{
 		count++;
 		n = -n;
+	}
 	if (n == 0)
 	{
 		count++;
@@ -22,19 +23,31 @@ int	size_of_int(long n)
 	return (count);
 }
 
-char	*ft_itoa(int n)
+char	*m_alloc(int n)
 {
 	char	*result;
 	size_t	int_len;
+	long	nbr;
+
+	nbr = n;
+	int_len = size_of_int(nbr);
+	result = (char *)malloc(sizeof(char) * (int_len + 1));
+	if (!result)
+		return (NULL);
+	return (result);
+}
+
+char	*ft_itoa(int n)
+{
 	size_t	i;
-	long nbr;
+	char	*result;
+	long	nbr;
+	size_t	int_len;
 
 	nbr = n;
 	int_len = size_of_int(nbr);
 	i = int_len - 1;
-	result = (char *)malloc(sizeof(char) * (int_len + 1));
-	if (!result)
-		return (NULL);
+	result = m_alloc(n);
 	if (nbr < 0)
 	{
 		result[0] = '-';
@@ -52,10 +65,10 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
-
+/*
 int main()
 {
-char *result = ft_itoa(-2147483648LL);
+char *result = ft_itoa(-24);
 printf("%s", result);
 }
-
+*/
