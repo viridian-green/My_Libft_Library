@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ademarti <adelemartin@student.42.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 12:19:38 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/23 17:07:20 by adelemartin      ###   ########.fr       */
+/*   Updated: 2023/12/05 15:16:47 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	p_dest = (char *)dest;
 	p_src = (char *)src;
 	i = 0;
-	 if (!dest && !src)
+	if (!dest && !src)
 		return (NULL);
 	if (dest == src)
 		return (dest);
@@ -34,10 +34,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-	while (n > 0)
-	{
-		n--;
-		p_dest[n] = p_src[n];
-	}
+		while (n > 0)
+		{
+			n--;
+			p_dest[n] = p_src[n];
+		}
 	return (dest);
 }

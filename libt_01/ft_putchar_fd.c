@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: ademarti <adelemartin@student.42.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/23 19:12:37 by adelemartin       #+#    #+#             */
-/*   Updated: 2023/11/24 15:44:02 by ademarti         ###   ########.fr       */
+/*   Created: 2023/12/05 15:08:37 by ademarti          #+#    #+#             */
+/*   Updated: 2023/12/05 15:08:40 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

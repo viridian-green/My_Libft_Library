@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ademarti <ademarti@student.42berlin.de     +#+  +:+       +#+        */
+/*   By: ademarti <adelemartin@student.42.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 19:15:40 by adelemartin       #+#    #+#             */
-/*   Updated: 2023/11/24 15:42:59 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/12/05 15:09:16 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

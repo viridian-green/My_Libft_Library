@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ademarti <adelemartin@student.42.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:35:34 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/29 12:32:12 by adelemartin      ###   ########.fr       */
+/*   Updated: 2023/12/05 15:12:31 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strchr(const char *s, int c)
 {
 	unsigned int	i;
-	char 			cc;
+	char			cc;
 
 	i = 0;
 	cc = (char) c;

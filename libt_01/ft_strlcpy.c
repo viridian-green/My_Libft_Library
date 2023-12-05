@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ademarti <adelemartin@student.42.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 12:12:26 by ademarti          #+#    #+#             */
-/*   Updated: 2023/11/23 17:18:01 by adelemartin      ###   ########.fr       */
+/*   Updated: 2023/12/05 15:10:03 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
