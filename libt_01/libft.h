@@ -6,7 +6,7 @@
 /*   By: adelemartin <adelemartin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 14:40:37 by ademarti          #+#    #+#             */
-/*   Updated: 2023/12/03 16:49:26 by adelemartin      ###   ########.fr       */
+/*   Updated: 2023/12/05 12:05:05 by adelemartin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,9 @@ void	ft_putchar_fd(char c, int fd);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int,
+char*));
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
