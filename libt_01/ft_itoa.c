@@ -6,7 +6,7 @@
 /*   By: ademarti <adelemartin@student.42.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 15:07:41 by ademarti          #+#    #+#             */
-/*   Updated: 2023/12/05 15:07:43 by ademarti         ###   ########.fr       */
+/*   Updated: 2023/12/07 16:27:41 by ademarti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,3 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
-/*
-int main()
-{
-char *result = ft_itoa(-24);
-printf("%s", result);
-}
-*/
