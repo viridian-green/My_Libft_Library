@@ -55,7 +55,7 @@ Custom utility functions for enhanced functionality:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/viridian-green/libft.git
+   git clone https://github.com/viridian-green/My_Libft_Library.git
    cd libft
    ```
 
