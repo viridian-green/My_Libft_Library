@@ -2,6 +2,8 @@
 
 A comprehensive C library implementing essential standard library functions and additional utilities. This project serves as a foundation for future C programming assignments and helps deepen understanding of fundamental programming concepts.
 
+
+  
 ## 📋 Table of Contents
 
 - [About](#about)
@@ -15,7 +17,10 @@ A comprehensive C library implementing essential standard library functions and 
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🎯 About
+
+
+
+## About
 
 **libft** is a custom C library that reimplements many of the standard C library (libc) functions, along with additional utility functions. This project is designed to:
 
@@ -24,7 +29,10 @@ A comprehensive C library implementing essential standard library functions and 
 
 The library strictly follows the original function behaviors and prototypes, with the key difference being the `ft_` prefix for all function names.
 
-## ✨ Features
+
+
+
+## Features
 
 ### Part 1: Libc Functions
 Recreation of essential standard library functions:
@@ -40,7 +48,10 @@ Custom utility functions for enhanced functionality:
 - **Function Application**: `ft_strmapi`, `ft_striteri`
 - **File Descriptor Output**: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
 
-## 🚀 Installation
+
+
+
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -60,7 +71,10 @@ Custom utility functions for enhanced functionality:
    make re       # Recompile everything
    ```
 
-## 💡 Usage
+
+
+
+
 
 ## 📚 Function Reference
 
@@ -107,49 +121,8 @@ Custom utility functions for enhanced functionality:
 | `ft_putstr_fd` | `void ft_putstr_fd(char *s, int fd)` | Outputs string to file descriptor |
 | `ft_putendl_fd` | `void ft_putendl_fd(char *s, int fd)` | Outputs string + newline to file descriptor |
 | `ft_putnbr_fd` | `void ft_putnbr_fd(int n, int fd)` | Outputs integer to file descriptor |
-## 📁 Project Structure
 
-```
-libft/
-├── Makefile           # Build configuration
-├── libft.h            # Header file with prototypes
-├── README.md          # Project documentation
-├── LICENSE            # License file
-├── ft_isalpha.c       # Character classification functions
-├── ft_isdigit.c
-├── ft_isalnum.c
-├── ft_isascii.c
-├── ft_isprint.c
-├── ft_strlen.c        # String manipulation functions
-├── ft_strlcpy.c
-├── ft_strlcat.c
-├── ft_strchr.c
-├── ft_strrchr.c
-├── ft_strncmp.c
-├── ft_strnstr.c
-├── ft_strdup.c
-├── ft_memset.c        # Memory manipulation functions
-├── ft_bzero.c
-├── ft_memcpy.c
-├── ft_memmove.c
-├── ft_memchr.c
-├── ft_memcmp.c
-├── ft_calloc.c
-├── ft_toupper.c       # Character conversion functions
-├── ft_tolower.c
-├── ft_atoi.c
-├── ft_substr.c        # Additional utility functions
-├── ft_strjoin.c
-├── ft_strtrim.c
-├── ft_split.c
-├── ft_itoa.c
-├── ft_strmapi.c
-├── ft_striteri.c
-├── ft_putchar_fd.c    # File descriptor output functions
-├── ft_putstr_fd.c
-├── ft_putendl_fd.c
-└── ft_putnbr_fd.c
-```
+
 
 ## ⚙️ Technical Requirements
 
@@ -161,6 +134,9 @@ libft/
 - **Helper Functions**: Must be declared as static
 - **Norm Compliance**: Follows 42 School coding standards
 
+
+
+
 ## 🎓 Learning Objectives
 
 By completing this project, you will have gained experience in:
@@ -171,6 +147,9 @@ By completing this project, you will have gained experience in:
 - Library creation and linking
 - Makefile creation and management
 - Understanding of standard library implementations
+
+
+
 
 ## 🤝 Contributing
 
@@ -184,4 +163,3 @@ By completing this project, you will have gained experience in:
 
 ---
 
-**Note**: This library is designed for educational purposes and 42 School curriculum. Feel free to expand and improve upon it throughout your learning journey!
